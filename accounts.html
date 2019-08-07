@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="accounts.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <section class="section accounts">
+    <section class="wrapper">
+        <div class="section accounts">
             <div class="container accounts__container">
                 <header class=" accounts__header">
                     <div class="accounts__header-avatar-block">
@@ -65,7 +67,7 @@
                                 Kazakhstan
                             </span>
                         </div>
-                        <div class="accounts__header-mail accounts__header--before-circle">
+                        <div class="accounts__header-mail before-circle">
                             <span class="accounts__header-mail-span">
                                 на контроле sultan@mail.ru
                             </span>
@@ -89,8 +91,8 @@
                     </div>
             </div>
             </header>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="container ">
                 <div class="bread-crumbs">
                     <h3 class="bread-crumbs__headline">
@@ -98,110 +100,270 @@
                     </h3>
                 </div>
             </div>
-        </section>
-        <section class="section">
-            <div class="search">
-                <input class="search__input" type="text" placeholder="Имя, ID, номер телефона">
-                <button class="search__button">
-                    <span class="search__icon icon">
-                        <svg class="icon__svg ">
-                            <use class="icon__svg-magnifer-fill" xlink:href='./svg/sprite.svg#icon-magnifer'></use>
-                        </svg>
-                    </span>
-                </button>
-
-
-
-
-
-                <div class="post-filtr">
-                    <div class="post-filtr__novelty">
-                        <label class='post-filtr__label' for="label-for-novelty">
-                            <div>
-                                По новизне
-                            </div>
-                            <span class="post-filtr__icon icon">
-                                <button class="post-filtr__button" id="label-for-novelty">
-                                    <svg class="icon__svg">
-                                        <use class="icon__svg-double-arrow-fill"
-                                            xlink:href='./svg/sprite.svg#icon-double-arrow'>
-                                        </use>
-                                    </svg>
-                                </button>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="post-filtr__publication">
-                        <label class="post-filtr__label" for="label-for-publication">
-                            <div>
-                                Кол-во публикаций
-                            </div>
-                            <span class="post-filtr__icon icon">
-                                <button class="post-filtr__button" id="label-for-publication">
-                                    <svg class="icon__svg">
-                                        <use class="icon__svg-double-arrow-fill"
-                                            xlink:href='./svg/sprite.svg#icon-double-arrow'>
-                                        </use>
-                                    </svg>
-                                </button>
-                            </span>
-                        </label>
+        </div>
+        <div class="control-bar">
+            <div class="container">
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Имя, ID, номер телефона">
+                    <button class="search__button">
+                        <span class="search__icon icon">
+                            <svg class="icon__svg ">
+                                <use class="icon__svg-magnifer-fill" xlink:href='./svg/sprite.svg#icon-magnifer'></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="filtr">
+                        <button class="filtr__button">
+                            <use class="filt__icon icon">
+                                <svg class="icon__svg ">
+                                    <use class="icon__svg-filter-fill" xlink:href='./svg/sprite.svg#icon-filter'></use>
+                                </svg>
+                            </use>
+                        </button>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
-            <div class="filtr">
-                <button class="filtr__button">
-                    <use class="filt__icon icon">
-                        <svg class="icon__svg ">
-                            <use class="icon__svg-filter-fill" xlink:href='./svg/sprite.svg#icon-filter'></use>
-                        </svg>
-                    </use>
-                </button>
+        </div>
+        <div class="post-filtr">
+            <div class="post-filtr__nevely">
+                <label for="label-for-nevely" class="post-filtr__label">
+                    <div>По новизне</div>
+                    <button id="label-for-nevely" class="post-filtr__button">
+                        <use class="filt__icon icon">
+                            <svg class="icon__svg ">
+                                <use class="icon__svg-double-arrow-fill"
+                                    xlink:href='./svg/sprite.svg#icon-double-arrow'></use>
+                            </svg>
+                        </use>
+                    </button>
+                    </labe>
             </div>
-            <div>
-
+            <div class="post-filtr__publication">
+                <label for="label-for-publication" class="post-filtr__label">
+                    <div>Кол-во публикаций</div>
+                    <button id="label-for-publication" class="post-filtr__button">
+                        <use class="filt__icon icon">
+                            <svg class="icon__svg ">
+                                <use class="icon__svg-double-arrow-fill"
+                                    xlink:href='./svg/sprite.svg#icon-double-arrow'>
+                                </use>
+                            </svg>
+                        </use>
+                    </button>
+                </label>
             </div>
+        </div>
+        <div class="cards">
+            <div class="container">
+                <ul class="cards__list">
+                    <div class="cards__block">
+                        <li class="cards__item">
+                            <h3 class="cards__headline reset">
+                                АДМИН ГРУППЫ (5 публикаций)
+                            </h3>
+                            <div class="cards__creator">
+                                <div class="monitoring">
+                                    <svg class="icon__svg ">
+                                        <use class="icon__svg-cards-people-fill"
+                                            xlink:href='./svg/sprite.svg#icon-cards-people'>
+                                        </use>
+                                    </svg>
+                                    <span class="cards__monitoring">
+                                        <h4 class="cards__news reset">Токаев</h4>
+                                </div>
+                                <span class="cards__date before-circle before-circle--margin">
+                                    на мониторинге с 13 июня
+                                </span>
+                                </span>
+                            </div>
+                            <div class="cards__info">
+                                <div class="cards__avatar">
+                                    <!--ТУТ ДОЛЖНА БЫТЬ АВАТРКА 40*40--> <img class="accounts__header-avatar-img"
+                                        src="https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg" alt="">
+                                    <a href="https://telegram.org/">
+                                        <span class="cards__icon icon">
+                                            <svg class="icon__svg icon__svg--no-margin">
+                                                <use class="icon__svg-telegram-fill"
+                                                    xlink:href='./svg/sprite.svg#icon-telegram'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="cards__info-textual">
+                                    <div class="cards__statistics">
+                                        <div class="cards__friends">
+                                            <span class="icon aligning">
+                                                <svg class="icon__svg icon__svg--no-margin">
+                                                    <use class="icon__svg-friend-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-friend'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="cards__friends__quanitty cards__styles">3 245</span>
+                                        </div>
+                                        <div class="cards__article">
+                                            <span class="icon aligning">
+                                                <svg class="icon__svg">
+                                                    <use class="icon__svg-article-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-article'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="card__statistics-article cards__styles">15 326</span>
+                                        </div>
+                                    </div>
+                                    <div class="date-added">Добавлена 11.06.2019 в 14:35</div>
+                                    <div class="interesting-information">
+                                        <a href="https://realworldrecords.com/" class="interesting-information__link">
+                                            https://realworldrecords.com/</a>
+                                        <a href="#" class="number-publications"> + 5 публикаций</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <li class="cards__item">
+                        <h3 class="cards__headline reset">
+                            АДМИН ГРУППЫ (5 публикаций)
+                        </h3>
+                        <div class="cards__creator">
+                            <div class="monitoring">
+                                <svg class="icon__svg ">
+                                    <use class="icon__svg-cards-people-fill"
+                                        xlink:href='./svg/sprite.svg#icon-cards-people'>
+                                    </use>
+                                </svg>
+                                <span class="cards__monitoring">
+                                    <h4 class="cards__news reset">Токаев</h4>
+                            </div>
+                            <span class="cards__date before-circle before-circle--margin">
+                                на мониторинге с 13 июня
+                            </span>
+                            </span>
+                        </div>
+                        <div class="cards__info">
+                            <div class="cards__avatar">
+                                <!--ТУТ ДОЛЖНА БЫТЬ АВАТРКА 40*40--> <img class="accounts__header-avatar-img"
+                                    src="https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg" alt="">
+                                <a href="https://telegram.org/">
+                                    <span class="cards__icon icon">
+                                        <svg class="icon__svg icon__svg--no-margin">
+                                            <use class="icon__svg-telegram-fill"
+                                                xlink:href='./svg/sprite.svg#icon-telegram'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="cards__info-textual">
+                                <div class="cards__statistics">
+                                    <div class="cards__friends">
+                                        <span class="icon aligning">
+                                            <svg class="icon__svg icon__svg--no-margin">
+                                                <use class="icon__svg-friend-fill"
+                                                    xlink:href='./svg/sprite.svg#icon-friend'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="cards__friends__quanitty cards__styles">3 245</span>
+                                    </div>
+                                    <div class="cards__article">
+                                        <span class="icon aligning">
+                                            <svg class="icon__svg">
+                                                <use class="icon__svg-article-fill"
+                                                    xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="card__statistics-article cards__styles">15 326</span>
+                                    </div>
+                                </div>
+                                <div class="date-added">Добавлена 11.06.2019 в 14:35</div>
+                                <div class="interesting-information">
+                                    <a href="https://realworldrecords.com/" class="interesting-information__link">
+                                        https://realworldrecords.com/</a>
+                                    <a href="#" class="number-publications"> + 5 публикаций</a>
+                                </div>
 
-        </section>
 
-    </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards__item">
+                        <h3 class="cards__headline reset">
+                            АДМИН ГРУППЫ (5 публикаций)
+                        </h3>
+                        <div class="cards__creator">
+                            <div class="monitoring">
+                                <svg class="icon__svg ">
+                                    <use class="icon__svg-cards-people-fill"
+                                        xlink:href='./svg/sprite.svg#icon-cards-people'>
+                                    </use>
+                                </svg>
+                                <span class="cards__monitoring">
+                                    <h4 class="cards__news reset">Токаев</h4>
+                            </div>
+                            <span class="cards__date before-circle before-circle--margin">
+                                на мониторинге с 13 июня
+                            </span>
+                            </span>
+                        </div>
+                        <div class="cards__info">
+                            <div class="cards__avatar">
+                                <!--ТУТ ДОЛЖНА БЫТЬ АВАТРКА 40*40--> <img class="accounts__header-avatar-img"
+                                    src="https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg" alt="">
+                                <a href="https://telegram.org/">
+                                    <span class="cards__icon icon">
+                                        <svg class="icon__svg icon__svg--no-margin">
+                                            <use class="icon__svg-telegram-fill"
+                                                xlink:href='./svg/sprite.svg#icon-telegram'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="cards__info-textual">
+                                <div class="cards__statistics">
+                                    <div class="cards__friends">
+                                        <span class="icon aligning">
+                                            <svg class="icon__svg icon__svg--no-margin">
+                                                <use class="icon__svg-friend-fill"
+                                                    xlink:href='./svg/sprite.svg#icon-friend'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="cards__friends__quanitty cards__styles">3 245</span>
+                                    </div>
+                                    <div class="cards__article">
+                                        <span class="icon aligning">
+                                            <svg class="icon__svg">
+                                                <use class="icon__svg-article-fill"
+                                                    xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="card__statistics-article cards__styles">15 326</span>
+                                    </div>
+                                </div>
+                                <div class="date-added">Добавлена 11.06.2019 в 14:35</div>
+                                <div class="interesting-information">
+                                    <a href="https://realworldrecords.com/" class="interesting-information__link">
+                                        https://realworldrecords.com/</a>
+                                    <a href="#" class="number-publications"> + 5 публикаций</a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
-<!--
-       <button class="button">
-        <span class="button__icon icon">
-            <svg class="icon__svg">
-                <use xlink:href="../src/assets/icons/icon-sprites.svg"></use>
-            </svg>
-        </span>
-    </button>
-
-    <div class="avatar">
-        <img class="avatar__img"
-            src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj8mKOb3OvjAhUStosKHXLmCt4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.perunica.ru%2Fvsako%2F5368-chto-oznachaet-vasha-avatarka.html&psig=AOvVaw2DXt6_LCw1NUGOv3Een3IG&ust=1565094154719527"
-            alt="">
-    </div>
--->
