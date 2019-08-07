@@ -1,0 +1,13 @@
+{
+    "name": "test-project",
+    "version": "1.0.0",
+    "description": "accounts",
+    "private": true,
+    "scripts": {
+        "generate:svg-sprite": "svg2sprite ./svg/icons ./svg/sprite.svg --stripAttrs fill --stripAttrs stroke --stripAttrs id"
+    },
+    "dependencies": {
+        "svg2sprite-cli": "^2.0.1"
+    },
+    "devDependencies": {}
+}
