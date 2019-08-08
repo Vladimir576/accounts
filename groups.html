@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="groups.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="group">
+            <div class="controls">
+                <button class="controls__button button" disabled>
+                    <div class="button__content">
+                        <span class="button__icon icon">
+                            <svg class="icon__svg ">
+                                <use class="button-fill icon__svg-button-fill--actived"
+                                    xlink:href='./svg/sprite.svg#icon-cards-people'>
+                                </use>
+                            </svg>
+                        </span>
+                        <span>Все</span>
+                    </div>
+                </button>
+                <button class="controls__button" disabled>
+                    <div class="button__content">
+                        <span class="button__icon icon">
+                            <svg class="icon__svg">
+                                <use class="button-fill icon__svg-button-fill--actived"
+                                    xlink:href='./svg/sprite.svg#icon-controls'>
+                                </use>
+                            </svg>
+                        </span>
+                        <span>На контроле</span>
+                    </div>
+                </button>
+                <button class="controls__button" disabled>
+                    <div class="button__content">
+                        <span class="button__icon icon">
+                            <svg class="icon__svg ">
+                                <use class="button-fill icon__svg-button-fill--actived"
+                                    xlink:href='./svg/sprite.svg#icon-bin'>
+                                </use>
+                            </svg>
+                        </span>
+                        <span>Отработано</span>
+                    </div>
+                </button>
+            </div>
+            <div class="management">
+                <div class="row">
+                    <div class="management__icons">
+                        <input type="checkbox" name="c1" id="c1">
+                        <label class="management__label" for="c1"></label>
+                        <button class="management__btn">
+                            <span class="management__icon icon__svg icon">
+                                <svg class="icon__svg ">
+                                    <use class="management__button-fill icon__svg-button-fill--actived"
+                                        xlink:href='./svg/sprite.svg#icon-controls'>
+                                    </use>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="management__btn">
+                            <span class="management_icon icon">
+                                <svg class="icon__svg">
+                                    <use class="management__button-fill icon__svg-button-fill--actived"
+                                        xlink:href='./svg/sprite.svg#icon-bin'>
+                                    </use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <span class="management__export">
+                        <button class="management__export-button">
+                            <span class="management__icon icon__svg span-reset">
+                                <svg class="icon__svg">
+                                    <use class="button-fill icon__svg-button-fill--actived"
+                                        xlink:href='./svg/sprite.svg#icon-export'>
+                                    </use>
+                                </svg>
+                            </span>
+                            Открыть в Profiler
+                        </button>
+                        <button>
+                            <span>
+                                <svg class="icon__svg">
+                                    <use class="button-fill-gray" xlink:href='./svg/sprite.svg#icon-group-filtr'>
+                                    </use>
+                                </svg>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="user">
+                <ul class="user__list">
+                    <li class="user__item">
+                        <div class="user__info">
+                            <div class="top-row">
+                                <input type="checkbox" name="c2" id="c2">
+                                <label for="c2" class="user__label"></label>
+
+                            </div>
+                            <div class="user__avatars">
+                                <div class="user__avatar">
+                                    <img src=" https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg"
+                                        class="rounding-avatar" alt="">
+                                </div>
+                                <div class="user__social">
+                                    <a class="telegramm-link" href="https://telegram.org/">
+                                        <span class="user__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="telegram-fill" xlink:href='./svg/sprite.svg#icon-telegram'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="user__textual-info">
+                                <div class="user__name">
+                                    Ислам
+                                </div>
+                                <div class="user__id">
+                                    ID: 26564646
+                                </div>
+                                <div class="user__phone">
+                                    <span class="user__icon icon phone__icon">
+                                        <svg class="icon__svg">
+                                            <use class="phone-fill-gray" xlink:href='./svg/sprite.svg#icon-mobile'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    <span> 7 701 365 45 25 </span>
+                                </div>
+                                <div class="user__country">
+                                    <span class="user__icon icon kazakhstan__icon">
+                                        <svg class="icon__svg ">
+                                            <use xlink:href='./svg/sprite.svg#icon-kazakhstan'></use>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Kazakhstan
+                                    </span>
+                                </div>
+                                <div class="user-footer">
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__friends">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="friend-fill" xlink:href='./svg/sprite.svg#icon-friend'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <div class="user-footer__link">
+                                                <span class="user-footer__quantely-friends">8</span>
+                                                (18.06.2019)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <span class="user-footer__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="article-fill" xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="user-footer__quantely-post">78</span>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__icons">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="people-gray-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-people-width-tablet'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="bin-gray-fill" xlink:href='./svg/sprite.svg#icon-bin'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user__item">
+                        <div class="user__info">
+                            <div class="top-row">
+                                <input type="checkbox" name="c3" id="c3">
+                                <label for="c3" class="user__label"></label>
+
+                            </div>
+                            <div class="user__avatars">
+                                <div class="user__avatar">
+                                    <img src=" https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg"
+                                        class="rounding-avatar" alt="">
+                                </div>
+                                <div class="user__social">
+                                    <a class="telegramm-link" href="https://telegram.org/">
+                                        <span class="user__icon icon">
+                                            <svg class="icon__svg ">
+                                                <use class="telegram-fill" xlink:href='./svg/sprite.svg#icon-telegram'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="user__textual-info">
+                                <div class="user__name">
+                                    Ислам
+                                </div>
+                                <div class="user__phone">
+                                    <span class="user__icon icon phone__icon">
+                                        <svg class="icon__svg ">
+                                            <use class="phone-fill-gray" xlink:href='./svg/sprite.svg#icon-mobile'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    <span> 7 701 365 45 25 </span>
+                                </div>
+                                <div class="user__country">
+                                    <span class="user__icon icon kazakhstan__icon">
+                                        <svg class="icon__svg ">
+                                            <use xlink:href='./svg/sprite.svg#icon-kazakhstan'></use>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Kazakhstan
+                                    </span>
+                                </div>
+                                <div class="user-footer">
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__friends">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="friend-fill" xlink:href='./svg/sprite.svg#icon-friend'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <div class="user-footer__link">
+                                                <span class="user-footer__quantely-friends">8</span>
+                                                (18.06.2019)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <span class="user-footer__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="article-fill" xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="user-footer__quantely-post">78</span>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__icons">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="people-gray-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-people-width-tablet'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="bin-gray-fill" xlink:href='./svg/sprite.svg#icon-bin'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user__item">
+                        <div class="user__headline user__headline--befor">на контроле aman@mail.ru</div>
+                        <div class="user__info">
+                            <div class="top-row">
+                                <input type="checkbox" name="c4" id="c4">
+                                <label for="c4" class="user__label"></label>
+
+                            </div>
+                            <div class="user__avatars">
+                                <div class="user__avatar">
+                                    <img src=" https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg"
+                                        class="rounding-avatar" alt="">
+                                </div>
+                                <div class="user__social">
+                                    <a class="telegramm-link" href="https://telegram.org/">
+                                        <span class="user__icon icon">
+                                            <svg class="icon__svg ">
+                                                <use class="telegram-fill" xlink:href='./svg/sprite.svg#icon-telegram'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="user__textual-info">
+                                <div class="user__name">
+                                    Ислам
+                                </div>
+                                <div class="user__id">
+                                    ID: 26564646
+                                </div>
+                                <div class="user__phone">
+                                    <span class="user__icon icon phone__icon">
+                                        <svg class="icon__svg ">
+                                            <use class="phone-fill-gray" xlink:href='./svg/sprite.svg#icon-mobile'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    <span> 7 701 365 45 25 </span>
+                                </div>
+                                <div class="user__country">
+                                    <span class="user__icon icon kazakhstan__icon">
+                                        <svg class="icon__svg ">
+                                            <use xlink:href='./svg/sprite.svg#icon-kazakhstan'></use>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Kazakhstan
+                                    </span>
+                                </div>
+                                <div class="user-footer">
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__friends">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="friend-fill" xlink:href='./svg/sprite.svg#icon-friend'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <div class="user-footer__link">
+                                                <span class="user-footer__quantely-friends">8</span>
+                                                (18.06.2019)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <span class="user-footer__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="article-fill" xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="user-footer__quantely-post">78</span>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__icons">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="people-gray-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-people-width-tablet'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="bin-gray-fill" xlink:href='./svg/sprite.svg#icon-bin'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user__item">
+                        <div class="user__headline">отработан karim@mail.ru</div>
+                        <div class="user__info">
+                            <div class="top-row">
+                                <input type="checkbox" name="c5" id="c5">
+                                <label for="c5" class="user__label"></label>
+
+                            </div>
+                            <div class="user__avatars">
+                                <div class="user__avatar">
+                                    <img src=" https://mitosa.net/avatars/60x60/mult/AVATAR15.jpg"
+                                        class="rounding-avatar" alt="">
+                                </div>
+                                <div class="user__social">
+                                    <a class="telegramm-link" href="https://telegram.org/">
+                                        <span class="user__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="telegram-fill" xlink:href='./svg/sprite.svg#icon-telegram'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="user__textual-info">
+                                <div class="user__name">
+                                    Aleka
+                                </div>
+                                <!--  <div class="user__id">
+                                        ID: 26564646
+                                    </div>-->
+                                <div class="user__phone">
+                                    <span class="user__icon icon phone__icon">
+                                        <svg class="icon__svg ">
+                                            <use class="phone-fill-gray" xlink:href='./svg/sprite.svg#icon-mobile'>
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    <span> 7 701 365 45 25 </span>
+                                </div>
+                                <div class="user__country">
+                                    <span class="user__icon icon kazakhstan__icon">
+                                        <svg class="icon__svg">
+                                            <use xlink:href='./svg/sprite.svg#icon-kazakhstan'></use>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Kazakhstan
+                                    </span>
+                                </div>
+                                <div class="user-footer">
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__friends">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="friend-fill" xlink:href='./svg/sprite.svg#icon-friend'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <div class="user-footer__link">
+                                                <span class="user-footer__quantely-friends">8</span>
+                                                (18.06.2019)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <span class="user-footer__icon icon">
+                                            <svg class="icon__svg">
+                                                <use class="article-fill" xlink:href='./svg/sprite.svg#icon-article'>
+                                                </use>
+                                            </svg>
+                                        </span>
+                                        <span class="user-footer__quantely-post">78</span>
+                                    </div>
+                                    <div class="user-footer__layout">
+                                        <div class="user-footer__icons">
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="people-gray-fill"
+                                                        xlink:href='./svg/sprite.svg#icon-people-width-tablet'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                            <span class="user-footer__icon icon">
+                                                <svg class="icon__svg">
+                                                    <use class="bin-gray-fill" xlink:href='./svg/sprite.svg#icon-bin'>
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
