@@ -1,0 +1,362 @@
+  .search-management__select {
+      appearance: none;
+
+      background: {
+          image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1255/caret--down-15.png");
+          position: right;
+          repeat: no-repeat;
+      }
+
+      border: 1px solid black;
+      color: black;
+      padding: 9px 15px;
+      height: 40px;
+      width: 200px;
+      outline: none;
+  }
+
+  .risk-factor {
+      width: 960px;
+  }
+
+
+  .search-management__select::-ms-expand {
+      display: none;
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  [id^=c] {
+      display: none;
+  }
+
+  [id^=c]+label {
+      width: 15px;
+      height: 15px;
+      border: 1px solid black;
+      border-radius: 2px;
+      text-align: center;
+  }
+
+  [id=c1]+label:before {
+      content: '\2713';
+      display: inline-block;
+      color: gray;
+      font-size: 15px;
+      line-height: 15px;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+  }
+
+
+  [id=c2]+label:before {
+      content: '\2713';
+      display: inline-block;
+      color: gray;
+      font-size: 15px;
+      line-height: 15px;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+  }
+
+  [id^=c]:checked+label:before {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+
+  .search-management__coverage-sort {
+      display: flex;
+  }
+
+  .search-management {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .highlighted {
+      font-weight: bold;
+      margin-right: 15px;
+  }
+
+  .user__label {
+      margin-right: 100px;
+      display: flex;
+  }
+
+  .user__label--after-one::after {
+      content: "Друзья";
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+  }
+
+  .user__label--after-two::after {
+      content: "Другие связи";
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      white-space: nowrap;
+  }
+
+
+  .search-management__coverage-sort-wrapper {
+      display: flex;
+  }
+
+  .radio__input {
+      display: none;
+  }
+
+  .search-management__radio {
+      display: flex;
+  }
+
+  .radio__fake-before {
+      width: 14px;
+      height: 14px;
+      border: 1px solid white;
+      border-radius: 50%;
+      position: relative;
+      background: white;
+      border: 1px black solid;
+      margin-right: 10px
+  }
+
+  .radio__fake-before::before {
+      content: "";
+      border-radius: 50%;
+      background: gray;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 0px;
+      height: 0px;
+  }
+
+  .radio__input:checked+.radio__fake-before {
+      content: "";
+      transition: 0.4s;
+      border-color: black;
+      background: white;
+  }
+
+  .radio__input:checked+.radio__fake-before::before {
+      content: "";
+      transition: 0.4s;
+      width: 6px;
+      height: 6px;
+  }
+
+  .radio__label {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+  }
+
+  .risk-factor__result-title {
+      text-transform: uppercase;
+      color: gray;
+  }
+
+  .risk-factor__result-sub-title {
+      color: gray;
+  }
+
+  ul {
+      padding: 0;
+      margin: 0;
+  }
+
+  .icon__svg {
+      width: 18px;
+      height: 18px;
+  }
+
+  li {
+      list-style-type: none;
+  }
+
+  .cards__avatar-img {
+      width: 60px;
+      height: 50px;
+      border-radius: 50%;
+  }
+
+  .cards__user-statistics-link {
+      position: relative;
+      color: gray;
+      text-decoration: none;
+      border-bottom: 1px solid gray;
+  }
+
+  .cards__user-statistics {
+      display: flex;
+  }
+
+  .cards__user-statistics-testimonial {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+  }
+
+  .cards__user-icon {
+      margin-right: 5px;
+  }
+
+  .cards__row {
+      display: flex;
+      margin-bottom: 15px;
+  }
+
+  .cards__user-name {
+      margin-bottom: 10px;
+  }
+
+  .cards__top-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .cards__text--bold {
+      font-weight: 700;
+  }
+
+  .cards__text--gray {
+      color: gray;
+  }
+
+  .cards__main-content {
+      margin-bottom: 15px;
+  }
+
+  .cards__user-link {
+      color: blue;
+      margin-bottom: 15px;
+  }
+
+  .cards__user-link-block {
+      margin-bottom: 15px;
+  }
+
+  .cards__user-name {
+      font-weight: 700;
+  }
+
+  .cards__footer-title {
+      text-transform: uppercase;
+      color: gray;
+  }
+
+  .cards__footer-sub-title {
+      color: gray;
+  }
+
+  .cards__item {
+      border: 2px gray solid;
+      width: auto;
+      height: auto;
+      padding: 20px;
+  }
+
+  .cards__item--actived {
+      border: 2px red solid;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .risk-factor__result,
+  .search-management {
+      margin-bottom: 25px;
+  }
+
+  .cards__list {
+      display: grid;
+      padding: 0;
+      grid-template: 1fr 1fr 1fr/1fr 1fr;
+      margin: 0;
+      grid-gap: 25px;
+  }
+
+  .cards__avatar {
+      margin-right: 15px;
+  }
+
+  .additional-info {
+      display: none;
+      font-family: 'Arial', sans-serif;
+      position: absolute;
+      top: 200px;
+      left: 245px;
+      z-index: 1;
+      background-color: #fff;
+      width: 320px;
+      height: 327px;
+      padding: 16px;
+      font-size: 13px;
+      box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 10px;
+      overflow-x: hidden;
+      overflow-y: auto;
+  }
+
+  .additional-info__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+
+  .additional-info__list {
+      font-weight: normal;
+  }
+
+  .additional-info__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  }
+
+  .additional-info__item-layout {
+      display: flex;
+      align-items: center;
+      flex: 1 1;
+  }
+
+  .additional-info__avatar {
+      width: 30px;
+      height: 30px;
+      background-color: #ccc;
+  }
+
+  .additional-info__button {
+      outline: none;
+      cursor: pointer;
+      background: none;
+      box-shadow: none;
+      border: none;
+  }
+
+  .bold {
+      font-weight: 600;
+  }
+
+  .bold--margin {
+      margin-right: 5px;
+  }
+
+  .shrink {
+      flex: 0 0 auto;
+  }
