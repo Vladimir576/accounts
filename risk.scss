@@ -298,17 +298,43 @@
       display: none;
       font-family: 'Arial', sans-serif;
       position: absolute;
-      top: 200px;
-      left: 245px;
+      color: #666;
       z-index: 1;
       background-color: #fff;
       width: 320px;
       height: 327px;
       padding: 16px;
       font-size: 13px;
-      box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 10px;
+      box-shadow: 0 0 10px #666;
       overflow-x: hidden;
       overflow-y: auto;
+  }
+
+  .additional-info--like {
+      top: 200px;
+      left: 223px;
+  }
+
+  .additional-info__title {
+      color: #000;
+  }
+
+  .icon__svg--delete {
+      fill: #666;
+  }
+
+  .additional-info--comments {
+      top: 200px;
+      left: 284px;
+  }
+
+  .additional-info--reposts {
+      top: 200px;
+      left: 339px;
+  }
+
+  .additional-info--active {
+      display: block;
   }
 
   .additional-info__header {
