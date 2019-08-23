@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+.scroll__header-title {
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.scroll__img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.scroll__list {
+    overflow-y: auto;
+    height: 260px;
+    width: 260px;
+    overflow-x: hidden;
+}
+
+.scroll__user-name {
+    margin-right: 5px;
+}
+
+.scroll__header {
+    margin-bottom: 35px;
+}
+
+.scroll__item {
+    margin-bottom: 30px;
+}
+
+.scroll__avatar {
+    margin-right: 10px;
+}
+
+.scroll__textual-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll__content {
+    display: flex;
+}
+
+.scroll__list-header {
+    margin-bottom: 15px;
+}
+
+.scroll__list-body {
+    margin-bottom: 10px;
+}
+
+.scroll__user-name {
+    font-weight: 600;
+}
+
+.scroll {
+    background: gainsboro;
+    width: 300px;
+    height: 650px;
+}
+
+.bold {
+    font-weight: bold;
+}
